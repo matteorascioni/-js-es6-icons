@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* BIG CONTAINER */
@@ -18,7 +18,8 @@ body {
 
 /* HEADER */
 .header-container h1{
-    font-size: 25px;
+    font-family: 'Acme', sans-serif;
+    font-size: 28px;
     line-height: 70px;
     margin-left: 20px;
     color: #0593ff;
