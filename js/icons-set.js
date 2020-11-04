@@ -104,7 +104,7 @@ $(document).ready(function() {
     'blue',
     'orange',
     'purple'
-  ]
+  ];
 
 
   // Icons container
@@ -148,7 +148,7 @@ function printIcons(icons, container) {
 
     container.append(html);
   });
-}
+};
 
 
 
@@ -157,7 +157,7 @@ function printIcons(icons, container) {
  */
 function colorIcons(icons, colors) {
   // Get types
-  const types = getTypes(icons);
+  const types = getType(icons);
 
   // Assign color by types
   const coloredIcons = icons.map((icon) => {
@@ -165,29 +165,29 @@ function colorIcons(icons, colors) {
 
     return {
       ...icon,
-      color: colors[indexType],
+      color: colors[indexType]
     };
   });
 
   return coloredIcons;
-}
+};
     
 
 
 /**
  * ICON TYPE FUNCTIONS 
  */
-function getTypes(icons) {
+function getType(icons) {
   const types = [];
 
   icons.forEach((icon) => {
     if (! types.includes(icon.type)) {
-      types.push(icon.type);
+        types.push(icon.type);
     }
   });
 
   return types;
-}
+};
 
 
 
